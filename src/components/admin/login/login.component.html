@@ -1,0 +1,44 @@
+<div  class="  containeer bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ...">
+
+
+  <div class="main_interface  backdrop-blur-sm bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... bg-opacity-50">
+
+    <div class="login_head">
+      <h2 class="text-4xl">Login</h2>
+    </div>
+  
+    <div class="login_body">
+      <div class="m-4">
+        <label class="text-white ">Username</label>
+        <input [(ngModel)]="loginObj.username" class="w-64 h-9 p-3 rounded-md" type="text" placeholder="Username">
+      </div>
+  
+      <div class="m-4">
+        <label class="text-white ">Password</label>
+        <input [(ngModel)]="loginObj.password" class="w-64 h-9 p-3 rounded-md" type="password" placeholder="password">
+      </div>
+
+      <div class="m-4">
+        <input type="checkbox" class="w-3 h-3">
+        <label for="" class="text-white">Remember Me</label>
+      </div>
+  
+    </div>
+    <div class="login_end">
+
+      <div class="icons flex align-middle justify-between">
+        <img class="size-9 m-6" src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="">
+        <img class="size-9 m-6" src="https://cdn-icons-png.flaticon.com/128/300/300221.png" >
+        <img class="size-9 m-6" src="https://cdn-icons-png.flaticon.com/128/2175/2175370.png" >
+      
+        
+        
+      </div>
+
+      <div class="button m-6">
+        <button class="bg-orange-600 w-64 h-9 rounded ml-6" (click)="onlogin()">Login</button>
+      </div>
+    </div>
+  </div>
+
+</div>
